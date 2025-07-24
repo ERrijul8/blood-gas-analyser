@@ -1,0 +1,19 @@
+[
+    {
+        "patient_id": "P001",
+        "pH": 7.38,
+        "pCO2": 40.2,
+        "pO2": 92.5,
+        "HCO3": 24.1,
+        "status": "Normal",
+        "timestamp": "2025-07-24 01:55:00"
+    },
+    {
+        "patient_id": "P002",
+        "pH": 7.30,
+        "pCO2": 50.0,
+        "HCO3": 23.0,
+        "status": "Respiratory Acidosis",
+        "timestamp": "2025-07-24 01:56:00"
+    }
+]
