@@ -1,0 +1,14 @@
+python blood_gas_analyzer.py
+import serial
+
+def read_blood_gas():
+    ser = serial.Serial('COM1', 9600, timeout=1)  # Adjust port and baud rate
+    data = ser.readline().decode().strip().split(',')
+    ser.close()
+    return {
+        "pH": float(data[0]),
+        "pCO2": float(data[1]),
+        "pO2": float(data[2]),
+        "HCO3": float(data[3])
+    }
+
